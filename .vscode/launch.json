@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--algo", "gcbf+", "--env", "DoubleIntegrator", "-n", "4", "--area-size", "4", "--loss-action-coef", "1e-4", "--n-env-train", "8", "--lr-actor", "1e-5" "--lr-cbf", "1e-5", "--horizon", "32"
+            ]
+        }
+    ]
+}
